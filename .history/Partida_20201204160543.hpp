@@ -13,7 +13,7 @@ public:
     {
     }
 
-    Partida(string nombre, string pieza, string movimientos)
+    Partida(string nombre, string pieza ,string movimientos)
     {
         this->nombre = nombre;
         this->pieza = pieza;
@@ -29,31 +29,28 @@ public:
     {
         return pieza;
     }
-
+    
     string getMovimientos()
     {
         return movimientos;
     }
 
-    void guardarPartida()
-    {
-
-        ofstream Escribir;
-        Escribir.open("./prueba.txt", ios::app);
-        Escribir << nombre << "\n"
-                 << pieza << "\n"
-                 << movimientos << endl;
-        Escribir.close();
+    void guardarPartida(){
+         
+    
+    ofstream Escribir;
+    Escribir.open("./prueba.txt",ios::app);
+    Escribir<<c<<";"<<n<<";"<<e<<endl;
+    Escribir.close();
     }
 
-    void cargarPartida(){
-        
-    }
+    
 
 protected:
-    string nombre;
-    string pieza;
-    string movimientos;
+   string nombre;
+   string pieza;
+   string movimientos;
+
 };
 
 #endif

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include "Pieza.hpp"
-#include "Partida.hpp"
+#include "Paritda.hpp"
 using namespace std;
 void crearTablero();
 void imprimirTablero();
@@ -10,14 +10,14 @@ void imprimirTablero();
 int main()
 {
     char temp_tablero[8][8] = {
-        {' ', ' ', ' ', ' ', 'r', ' ', ' ', ' '},
         {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
         {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
         {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
         {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
         {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
         {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {' ', ' ', ' ', ' ', 'R', ' ', ' ', ' '}
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}
 
     };
 

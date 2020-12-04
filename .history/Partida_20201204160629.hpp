@@ -46,10 +46,6 @@ public:
         Escribir.close();
     }
 
-    void cargarPartida(){
-        
-    }
-
 protected:
     string nombre;
     string pieza;

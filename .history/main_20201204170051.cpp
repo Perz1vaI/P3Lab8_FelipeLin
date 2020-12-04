@@ -36,7 +36,7 @@ int main()
     }
 
     int menu;
-    cout << "Cosas del main no tengo casi nada solo valide movimientos y puse metodos de guardar, pero no los pongo en uso" << endl;
+cout << "Despues de esto no e hecho mucho solo valide movimientos y puse metodos de guardar, pero no los pongo en uso" << endl;
     cout << "1. Jugar partida\n2. Recrear partida\n3. Salida\n";
     cout << "Ingrese la opcion: ";
     cin >> menu;

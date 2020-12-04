@@ -4,7 +4,6 @@ using namespace std;
 void crearTablero();
 void imprimirTablero();
 
-
 int main()
 {
     char temp_tablero[8][8] = {
@@ -84,5 +83,3 @@ void imprimirTablero(char **tablero)
     }
     cout << endl;
 }
-
-

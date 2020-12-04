@@ -4,7 +4,6 @@ using namespace std;
 void crearTablero();
 void imprimirTablero();
 
-
 int main()
 {
     char temp_tablero[8][8] = {
@@ -40,7 +39,6 @@ int main()
         case 1:
         {
 
-
             break;
         }
         case 2:
@@ -55,7 +53,7 @@ int main()
         }
         }
 
-        cout << "1. Jugar partida\n2. Recrear partida\n3. Salida\n";
+        cout << "1. Jugar con un tablero aletorio\n2. Jugar con tablero predefinido\n3. Salida\n";
         cout << "Ingrese la opcion: ";
         cin >> menu;
     }
@@ -84,5 +82,3 @@ void imprimirTablero(char **tablero)
     }
     cout << endl;
 }
-
-

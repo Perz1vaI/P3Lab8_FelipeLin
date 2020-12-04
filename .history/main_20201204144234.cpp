@@ -4,7 +4,6 @@ using namespace std;
 void crearTablero();
 void imprimirTablero();
 
-
 int main()
 {
     char temp_tablero[8][8] = {
@@ -85,4 +84,29 @@ void imprimirTablero(char **tablero)
     cout << endl;
 }
 
+bool movimiento(int _x, int _y, int xViejo, int yViejo)
+    {
 
+        if (validarMovimiento(_x, _y, xViejo, yViejo))
+        {
+            if (tablero[_x][_y] != NULL)
+            {
+
+                tablero[_x][_y] = tablero[xViejo][yViejo];
+                tablero[xViejo][yViejo] = NULL;
+                return true;
+            }
+            else
+            {
+                tablero[_x][_y] = tablero[xViejo][yViejo];
+                tablero[xViejo][yViejo] = NULL;
+                xViejo = _x;
+                yViejo = _y;
+                return true;
+            }
+        }
+        else
+        {
+            return false;
+        }
+    }

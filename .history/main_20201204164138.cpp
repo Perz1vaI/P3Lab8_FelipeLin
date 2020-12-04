@@ -2,14 +2,10 @@
 #include <cstdlib>
 #include "Pieza.hpp"
 #include "Partida.hpp"
-#include "Alfil.hpp"
-#include "Caballo.hpp"
-#include "Rey.hpp"
-#include "Reina.hpp"
-#include "Torre.hpp"
 using namespace std;
 void crearTablero();
 void imprimirTablero();
+
 
 int main()
 {
@@ -45,49 +41,28 @@ int main()
         {
         case 1:
         {
-            int x, y;
-            cout << "Donde va querer empezar jugar?" << endl;
-            cout << "x = " << endl;
-            cin >> x;
-            cout << "y = " << endl;
-            cin >> y;
             cout << "Con que pieza va jugar?" << endl;
-            cout << "1. Peon\n2. Caballo\n3. Alfil\n4. Torre\n5. Reina" << endl;
+            cout << "1. Peon\n2. Caballo\n3. Alfil\n4. Torre\n5. Reina"<< endl;
             int pieza;
-            cin >> pieza;
             switch (pieza)
             {
-            case 1:
-            {
+            case 1:{
                 break;
             }
-            case 2:
-            {
-                Caballo *c = new Caballo(x, y, 'C');
-
+            case 2:{
                 break;
             }
-            case 3:
-            {
-
-                Alfil *a = new Alfil(x, y, 'A');
-
+            case 3:{
                 break;
             }
-            case 4:
-            {
-                Torre *t = new Torre(x, y, 'T');
-
+            case 4:{
                 break;
             }
-            case 5:
-            {
-                Reina *r = new Reina(x, y, 'D');
-
+            case 5:{
                 break;
             }
             default:
-                cout << "No existe esa opcion" << endl;
+            cout << "No existe esa opcion" << endl;
                 break;
             }
 
@@ -134,3 +109,5 @@ void imprimirTablero(char **tablero)
     }
     cout << endl;
 }
+
+

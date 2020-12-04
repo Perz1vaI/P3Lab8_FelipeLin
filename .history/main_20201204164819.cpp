@@ -45,7 +45,7 @@ int main()
         {
         case 1:
         {
-            int x, y;
+            int x,y;
             cout << "Donde va querer empezar jugar?" << endl;
             cout << "x = " << endl;
             cin >> x;
@@ -63,27 +63,19 @@ int main()
             }
             case 2:
             {
-                Caballo *c = new Caballo(x, y, 'C');
-
+                Caballo c = new Caballo(x,y,'c');
                 break;
             }
             case 3:
             {
-
-                Alfil *a = new Alfil(x, y, 'A');
-
                 break;
             }
             case 4:
             {
-                Torre *t = new Torre(x, y, 'T');
-
                 break;
             }
             case 5:
             {
-                Reina *r = new Reina(x, y, 'D');
-
                 break;
             }
             default:

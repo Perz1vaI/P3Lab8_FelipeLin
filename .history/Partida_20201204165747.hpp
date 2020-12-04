@@ -44,7 +44,7 @@ public:
                  << pieza << "\n"
                  << movimientos << endl;
 
-        guardar << "--------------------------------" << endl;
+        guardar << "-------------------------" << endl;
         guardar.close();
     }
 

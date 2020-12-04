@@ -45,45 +45,30 @@ int main()
         {
         case 1:
         {
-            int x, y;
-            cout << "Donde va querer empezar jugar?" << endl;
-            cout << "x = " << endl;
-            cin >> x;
-            cout << "y = " << endl;
-            cin >> y;
             cout << "Con que pieza va jugar?" << endl;
             cout << "1. Peon\n2. Caballo\n3. Alfil\n4. Torre\n5. Reina" << endl;
             int pieza;
-            cin >> pieza;
             switch (pieza)
             {
             case 1:
             {
+                
                 break;
             }
             case 2:
             {
-                Caballo *c = new Caballo(x, y, 'C');
-
                 break;
             }
             case 3:
             {
-
-                Alfil *a = new Alfil(x, y, 'A');
-
                 break;
             }
             case 4:
             {
-                Torre *t = new Torre(x, y, 'T');
-
                 break;
             }
             case 5:
             {
-                Reina *r = new Reina(x, y, 'D');
-
                 break;
             }
             default:
